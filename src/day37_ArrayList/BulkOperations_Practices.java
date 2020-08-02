@@ -37,5 +37,17 @@ public class BulkOperations_Practices {
 
         System.out.println(numbers);
 
+        System.out.println("======");
+
+        ArrayList <String> group7= new ArrayList<>();
+        //add all group member names
+
+        //verify your mentor and one of your closest friend are contained  in the list
+
+        group7.addAll(Arrays.asList("ali", "veli", "deli"));
+        System.out.println(group7);
+System.out.println(group7.containsAll(Arrays.asList("zeki", "seli")));
+
+
     }
 }

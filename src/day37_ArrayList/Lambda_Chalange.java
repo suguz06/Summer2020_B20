@@ -21,7 +21,19 @@ program can removed elements that are not unique from ArrayList
 
         System.out.println(nums);
 
+        System.out.println("============");
 
+        ArrayList<Character> chars=new ArrayList<>();
 
+        //chars.addAll('a','$', '3', '7','@', 'c', '&');
+
+chars.addAll(Arrays.asList('a','$', '3', '7','@', 'c', '&'));
+
+        System.out.println(chars);
+
+//chars.removeIf( p-> Character.isDigit(p) && Character.isLetter(p));
+
+chars.removeIf(p-> Character.isDigit(p) || Character.isLetter(p));
+        System.out.println(chars);
     }
 }

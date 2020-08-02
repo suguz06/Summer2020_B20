@@ -23,6 +23,8 @@ public class FrequencyOfChars {
             list.add(each);
         }
 
+        // OR by using asList(str.Split("");
+
         System.out.println(list);
 String nonDup= Util.removeDup(str);
 

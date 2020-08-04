@@ -11,9 +11,9 @@ public class Practices {
         ArrayList<Integer> nums= new ArrayList<>();
         nums.addAll(Arrays.asList(1,1,1,23,4,3,2,4,54,32,4,3,2,2,4,56,2));
 
-       // /remove numbers less than 5
+       // /remove numbers less than 5  ====>>>>>>> nums.removeIf(p -> p<5);
         for(int i=0; i<nums.size(); ++i) {
-            if(nums.get(i)<5) nums.remove(i);
+            if(nums.get(i)<5) nums.remove(i); // this gives wrong results
         }
 
         System.out.println(nums);

@@ -57,10 +57,10 @@ public class RemoveAll {
 
         employeNames1.addAll(Arrays.asList("Ahmed", "Ali","Ahmed" , "John","Sara", "Jack", "Ahmed"));
         System.out.println(employeNames1);
-        employeNames1.retainAll(Arrays.asList("Ahmed", "Dawud"));
+        boolean a=employeNames1.retainAll(Arrays.asList("Ahmed", "Dawud"));
         System.out.println(employeNames1);
 
-
+        System.out.println(a);
 
     }
 }

@@ -16,6 +16,8 @@ public class WArmUp1 {
         System.out.println(list);
 
 
+        Arrays.asList(str.split(""));
+        System.out.println(Arrays.asList(str.split("")));
 
     }
 }

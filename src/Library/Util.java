@@ -500,4 +500,52 @@ public class Util{
     }
 //sorts char array in descending order and return array
 
+    public static boolean isPrime(int a)
+    {
+
+        if(a<=1) { return false;}
+        int div=2;
+
+        while(div<a) {
+            if(a%div==0) { return false;  }
+            div++;
+        }
+
+        return true;
+
+
+    }
+    //check the number is prime =>return boolean
+    public static boolean isPrime1(int a)
+    {
+
+        if(a<=1) { return false;}
+
+
+        for(int i=2; i<a;++i) {
+            if(a%i==0) { return false;  }
+        }
+
+        return true;
+
+
+    }
+    // 2nd way check the number is prime =>return boolean
+
+    public static  int reverseNum(int a) { // a=1234  =>>4321
+
+
+        int remain=0;
+        int reverse=0;
+        while(a>0) {
+
+            remain=a%10;
+            reverse= reverse *10+ remain;
+            a=a/10;
+        }
+        return reverse;
+    }
+    //reverse a number
+
+
 }

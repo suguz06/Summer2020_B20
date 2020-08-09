@@ -1,6 +1,5 @@
 package day21_DoWhile;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 public class DoWhile_Practices {
     public static void main(String[] args) {

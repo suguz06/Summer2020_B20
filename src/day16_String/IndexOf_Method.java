@@ -1,7 +1,6 @@
 package day16_String;
 
 
-import com.sun.org.apache.xpath.internal.objects.XString;
 
 /*
 indexOf() ==>> return integer and gives the index of the char

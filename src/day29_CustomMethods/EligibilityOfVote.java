@@ -1,6 +1,6 @@
 package day29_CustomMethods;
 
-import com.sun.deploy.security.SelectableSecurityManager;
+
 
 public class EligibilityOfVote {
 

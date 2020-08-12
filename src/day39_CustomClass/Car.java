@@ -17,6 +17,35 @@ public class Car {
     double mileage;
     double price;
 
+// Actions/functions==> methods
+    public  void setInfo(String carBrand, String carModel,
+                         int carYear, String carColor,
+                         double carMileage, double carPrice ){
+
+        brand=carBrand;
+        model=carModel;
+        year=carYear;
+        color=carColor;
+        mileage=carMileage;
+        price=carPrice;
+
+
+
+
+    }
+//sets the info of the cars
+
+
+//2012 Toyota Corolla, Red, 1000, $ 45000
+public  void getInfo() {
+    System.out.println(year+ " "+brand+ " "+ model+", "
+            +color+", "+ mileage+", $"+price);
+}
+//prints  the car info
+
+public void start() {
+    System.out.println(brand+ " "+ model+ " is started");
+}
 
 
 

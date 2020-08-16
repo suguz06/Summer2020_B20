@@ -1,4 +1,6 @@
-package day41_Static;
+package day41_toString;
+
+import java.text.DecimalFormat;
 
 /*
 warmup tasks:
@@ -27,33 +29,39 @@ public class Carpet2 {
     double unitPrice;
     boolean isPersian;
 
-    public void customOrder( double width, double length, double unitPrice, boolean isPersian){
-      this.width= width;
-       this.length= length;
-        this.unitPrice= unitPrice;
-        this.isPersian=isPersian;
+    public void customOrder(double width, double length, double unitPrice, boolean isPersian) {
+        this.width = width;
+        this.length = length;
+        this.unitPrice = unitPrice;
+        this.isPersian = isPersian;
     }
 
-   /*
-   carpet 1, carpet2, carpet3
-    */
-    public double calCost(){
-        double totalPrice=width * length * unitPrice;
-          if(isPersian) {
-              totalPrice +=200;
-          }
+    /*
+    carpet 1, carpet2, carpet3
+     */
+    public double calCost() {
+        double totalPrice = width * length * unitPrice;
+        if (isPersian) {
+            totalPrice += 200;
+        }
         return totalPrice; // ternary==> return (isPersian)? totalPrice+200: totalPrice;
 
     }
 
-public void getCarpetInfo(){
-    System.out.println("=============================");
-    System.out.println("Carpet width: "+this.width); // it works this alsocal
-    System.out.println("Carpet length: "+length);
-    System.out.println("Carpet unitprice: "+unitPrice);
-    System.out.println("Carpet is Persian: "+ isPersian);
-    System.out.println("Carpet total price: "+ calCost());
-    System.out.println("==============================");
-}
+    public void getCarpetInfo() {
+        DecimalFormat df = new DecimalFormat("0.00");
+        System.out.println("=============================");
+        System.out.println("Carpet width: " + this.width); // it works this alsocal
+        System.out.println("Carpet length: " + length);
+        System.out.println("Carpet unitprice: " + unitPrice);
+        System.out.println("Carpet is Persian: " + isPersian);
+        System.out.println("Carpet total price: " + df.format(calCost()));
+        System.out.println("==============================");
+    }
+
+    public String toString() {
+        return "Width "+ width+ ", length: "+ length
+                +", persian "+ isPersian+ "\n"+ "total cost: $"+calCost();
+    }
 
 }

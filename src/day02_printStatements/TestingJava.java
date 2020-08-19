@@ -1,50 +1,47 @@
 package day02_printStatements;
 
 /*
+ Write a return method that check if a string is build out of the same
+letters as another string.
+Ex: same("abc", "cab"); -> true , same("abc", "abb"); -> false:
 
- Write a return method that can find the unique characters from the
-String
-Ex: unique("AAABBBCCCDEF") ==> "DEF";
- */
-
-/*
-
-Solution 2:
-public static String Unique(String str) {
-String result ="";
-for(String each : str.split(""))
-result += ( (Collections.frequency(Arrays.asList(str.split("")), each)) ==1 ) ? each : "";
-return result;
-}
  */
 
 
-/*
 
-S
- */
 
-import org.w3c.dom.ls.LSOutput;
 
 import java.util.Arrays;
 import java.util.Collections;
 
 public class TestingJava {
 
-    public static void main(String[] args) {
+   public  static boolean same(String s1, String s2){
 
+       String [] ar1= s1.split("");
+       String [] ar2=s2.split("");
 
+       Arrays.sort(ar1);
+       Arrays.sort(ar2);
 
-        int [] a1={1,2,3,66,90};
-
-        int max=a1[0];
-        int min= a1[0];
-       for (int each: a1) {
-           if(each>max) {max=each;}
-           if(min>each) {min=each;}
+       String a1="";
+       for (String each: ar1){
+           a1 +=each;
+       }
+       String a2="";
+       for (String each: ar2){
+           a2 +=each;
        }
 
-        System.out.println("max "+ max+ " min "+min);
+       return a1.equals(a2);
+
+}
+
+
+    public static void main(String[] args) {
+
+same("aebcd", "bcfad");
+        System.out.println(same("aebcd", "bcfad"));
 
     }
 

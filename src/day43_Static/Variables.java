@@ -1,7 +1,7 @@
 package day43_Static;
 
 public class Variables {
-// outside the mthod and block==> instance variables
+// outside the method and block==> instance variables
 
     int d;
     static int e=10;
@@ -9,7 +9,7 @@ public class Variables {
 
     public void method2(){
         System.out.println(d); /// takes instance variables
-        System.out.println(e); // accept intance or static variables
+        System.out.println(e); // accept instance or static variables
     }
 
     public static void main(String[] args) {

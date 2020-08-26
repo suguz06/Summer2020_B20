@@ -21,7 +21,7 @@ public  static void getInfo(){
 }
 
 
-    //for the advantages of static => 1. call by class name 2. less memory and coomon value
+    //for the advantages of static => 1. call by class name 2. less memory and common value
     public static void main(String[] args) {
         System.out.println(A.a);
     }

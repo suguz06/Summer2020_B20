@@ -11,6 +11,7 @@ Ex: same("abc", "cab"); -> true , same("abc", "abb"); -> false:
 
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -43,12 +44,36 @@ public class TestingJava {
 same("aebcd", "bcfad");
         System.out.println(same("aebcd", "bcfad"));
 
+        System.out.println("reverse(\"selman\") = " + reverse("selman"));
+
     }
 
 
 
 
+public  static String reverse(String s) {
+       //by using ArrayList
 
+    String reverse="";
+
+    ArrayList<String > al=new ArrayList<>();
+
+    for(String each : s.split("")) {
+        al.add(each);
+    }
+
+    Collections.reverse(al);
+
+
+    for(String each: al) {
+        reverse +=each;
+    }
+
+    return reverse;
+
+
+
+}
 
 
 }

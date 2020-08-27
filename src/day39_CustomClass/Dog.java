@@ -13,12 +13,12 @@ public class Dog {
     int age;
     String color;
 
-    public void setDogInfo(String dogName, String dogBreed, String dogSize, int dogAge,
+    public void setDogInfo(String  name, String dogBreed, String dogSize, int age,
                            String dogColor) {
-        name = dogName;
+        name =  name;
         breed = dogBreed;
         size = dogSize;
-        age = dogAge;
+        age = age;
         color = dogColor;
     }
     //sets the info of the dog

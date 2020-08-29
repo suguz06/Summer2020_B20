@@ -17,63 +17,29 @@ import java.util.Collections;
 
 public class TestingJava {
 
-   public  static boolean same(String s1, String s2){
+    public static String[] combineNames(String[] first_names, String[] last_names)
+    {
+        // write your codes here
+        String [] ar=new String[first_names.length];
+        for (int i=0; i<=first_names.length-1; ++i) {
+            ar[i]= first_names[i]+last_names[i];
 
-       String [] ar1= s1.split("");
-       String [] ar2=s2.split("");
+        }
+        return ar;
 
-       Arrays.sort(ar1);
-       Arrays.sort(ar2);
-
-       String a1="";
-       for (String each: ar1){
-           a1 +=each;
-       }
-       String a2="";
-       for (String each: ar2){
-           a2 +=each;
-       }
-
-       return a1.equals(a2);
-
-}
-
-
-    public static void main(String[] args) {
-
-same("aebcd", "bcfad");
-        System.out.println(same("aebcd", "bcfad"));
-
-        System.out.println("reverse(\"selman\") = " + reverse("selman"));
 
     }
 
 
 
+    public static void main(String[] args)
+    {
+        //feel free to test code here
+        String[]	first_names = {"Bulent","Ebrahim"};
+        String[] last_names = {"Pola","Emam"};
+        System.out.println(Arrays.toString(combineNames (first_names, last_names)));
 
-public  static String reverse(String s) {
-       //by using ArrayList
-
-    String reverse="";
-
-    ArrayList<String > al=new ArrayList<>();
-
-    for(String each : s.split("")) {
-        al.add(each);
     }
-
-    Collections.reverse(al);
-
-
-    for(String each: al) {
-        reverse +=each;
-    }
-
-    return reverse;
-
-
-
-}
 
 
 }

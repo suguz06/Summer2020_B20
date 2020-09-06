@@ -33,13 +33,13 @@ public class Pets {
 
 
     protected void eat(){
-        System.out.println(name+ "is eating  chocolate  ");
+        System.out.println(name+ " is eating  chocolate  ");
     }
     protected void drink(){
-        System.out.println(name+ "is drinking milk  ");
+        System.out.println(name+ " is drinking milk  ");
     }
     protected void sleep(){
-        System.out.println(name+ "is sleeping on the floor  ");
+        System.out.println(name+ " is sleeping on the floor  ");
     }
 
 @Override

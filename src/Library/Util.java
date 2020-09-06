@@ -546,6 +546,14 @@ public class Util{
         return reverse;
     }
     //reverse a number
+    public static void sleep(int seconds) {
 
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+
+        }
+
+    } // sleep the compiler
 
 }

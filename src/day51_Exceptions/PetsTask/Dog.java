@@ -2,9 +2,11 @@ package day51_Exceptions.PetsTask;
 
 public class Dog extends Pets  {
 
+ double price;
 
-    public Dog(String name, String breed, char gender, int age, String color) {
+    public Dog(String name, String breed, char gender, int age, String color, double price) {
         super(name, breed, gender, age, color);
+        this.price=price;
     }
 
 //
@@ -20,19 +22,19 @@ public class Dog extends Pets  {
 
 
 
-    public String toString(){
-        return super.toString();
-    }
-
-
-//    @Override
-//    public String toString() {
-//        return "Dog{" +
-//                "name='" + name + '\'' +
-//                ", age=" + age +
-//                ", gender=" + gender +
-//                ", breed='" + breed + '\'' +
-//                ", color='" + color + '\'' +
-//                '}';
+//    public String toString(){
+//        return super.toString();
 //    }
+
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }

@@ -7,7 +7,7 @@ package day51_Exceptions;
 
 //static can not overriding=> since it is not related object => static belogns class
 
-// overriding=> same name same arg and same return type( 1 method in memory)
+// overriding=> same name, same arg and same return type( 1 method in memory)
 //For SuperClass
 // For sub-class=> Accesss M=>> same or more visible exp> public then must public
 

@@ -29,7 +29,7 @@ public double length;
     }
 
     @Override
-    public double calculateArea() {
+    public  double calculateArea() {
         return length*width;
     }
 

@@ -1,34 +1,36 @@
 package day02_printStatements;
 
 
-import java.io.IOException;
 
 public class TestingJava    {
 
-static int a=50;
 
-    public static void main(String[] args) throws RuntimeException {
-
-a=100;
-
- try{ a=200;
-
- }catch (Exception e){
-     a=300;
-
- } finally {
-     a=400;
- }
-        System.out.println(a);
-        }
+    public static void main(String[] args) {
 
 
-static {
-        a=500;
-}
+        int a=5;
+        Integer b;
+        b=a; //auto => primitive assign => object
+
+        int c;
+        c=b;//unbox => object=> primitive
+
+        Integer d=b; //kickbox
+
+
+        System.out.println(b);
+        System.out.println("c = " + c);
 
 
     }
+
+}
+
+
+
+
+
+
 
 
 

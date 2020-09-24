@@ -1,6 +1,6 @@
 package day54_Abstraction.AnimalTask;
 
-public abstract class Animal{
+public  abstract class Animal{
 
 
     String name;

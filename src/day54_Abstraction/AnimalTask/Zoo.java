@@ -10,7 +10,7 @@ public class Zoo {
         Dog dog=new Dog("Comar", 3, "Black");
 
 
-
+        System.out.println(cat);
 
 
     }

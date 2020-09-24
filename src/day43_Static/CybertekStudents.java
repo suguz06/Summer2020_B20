@@ -16,6 +16,8 @@ public class CybertekStudents {
 
 public  static void getInfo(){
 
+
+
    // System.out.println("Name"+ studentName); //name is instance
     System.out.println("School name" +schoolName);
 }

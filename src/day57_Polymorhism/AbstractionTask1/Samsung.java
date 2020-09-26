@@ -1,4 +1,4 @@
-package day57_Polymorhism.AbstractionTask;
+package day57_Polymorhism.AbstractionTask1;
 /*
 create a class named Samsung that can inherit from AndroidApps and Phone
             actions: texting(), calling(), freezing()

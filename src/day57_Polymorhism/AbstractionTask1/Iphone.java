@@ -1,9 +1,9 @@
-package day57_Polymorhism.AbstractionTask;
+package day57_Polymorhism.AbstractionTask1;
 
-public class IPhone extends Phone implements AppleAppStore {
+public class Iphone extends Phone implements AppleAppStore {
 
 
-    public IPhone( String model, double price, double size) {
+    public Iphone(String model, double price, double size) {
         super("IPhone", model, price, size);
         if (price>1500) {
             throw new RuntimeException("Invalid Price, Iphone' price cannot more than 1500");

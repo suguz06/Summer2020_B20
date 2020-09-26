@@ -1,4 +1,4 @@
-package day57_Polymorhism.AbstractionTask;
+package day57_Polymorhism.AbstractionTask1;
 
 public interface Downloadable {
 

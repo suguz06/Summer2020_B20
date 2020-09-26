@@ -1,4 +1,4 @@
-package day57_Polymorhism.AbstractionTask;
+package day57_Polymorhism.AbstractionTask1;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ public class PhoneObjects {
 
     public static void main(String[] args) {
 
-        IPhone iPhone=new IPhone("X", 1200, 10.2);
+        Iphone iPhone=new Iphone("X", 1200, 10.2);
 
         System.out.println(iPhone);
 
@@ -26,7 +26,7 @@ public class PhoneObjects {
    //Polymorphism=> object behaves many forms
 
 
-        Phone phone1=new IPhone("x",120,2.6);
+        Phone phone1=new Iphone("x",120,2.6);
         Phone phone2=new Huawei("Robbery", 12, 2.3);
         Phone phone3=new Samsung("xl", 20, 2.8);
 

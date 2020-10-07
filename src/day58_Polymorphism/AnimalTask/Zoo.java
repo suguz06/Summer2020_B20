@@ -1,14 +1,22 @@
 package day58_Polymorphism.AnimalTask;
 
+import day51_Exceptions.BrowsersTask.ChromeBrowser;
+import day51_Exceptions.BrowsersTask.Webdriver;
+
 public class Zoo {
 
     public static void main(String[] args) {
 
         Dog dog1=new Dog("Kara", 4, 'M');
+        Animal dog2=new Dog("Kara1", 4, 'F');
+
+
 
           dog1.sleep(); //super class (version) implements //inheried this method
           dog1.eat();
           dog1.bark();
+
+        
 
 //we can call all of variables
         System.out.println(dog1.gender);

@@ -8,6 +8,9 @@ public class PhoneObjects {
 
         Iphone iPhone=new Iphone("X", 1200, 10.2);
 
+
+
+
         System.out.println(iPhone);
 
         Samsung samsung=new Samsung("Galaxy",1050,12.2);

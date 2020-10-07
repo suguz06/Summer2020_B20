@@ -14,14 +14,15 @@ public class DownCasting_Practice {
         Phone phone1 = new Iphone("11", 1200, 5.6);
 
 
-        ((Iphone) phone1).faceTiming(); // group of all parantesis to have action
+
+        ((Iphone) phone1).faceTiming(); // group of all parenthesis to have action
 
 
         // phone1.faceTiming(); // reference type can not have this action
 
         Iphone iphone = (Iphone) phone1;
 
-        iphone.faceTiming(); // polymorhism=> reference type is now Iphone
+        iphone.faceTiming(); // polymorphism=> reference type is now Iphone
         //then call the action facetiming
 
 
@@ -32,6 +33,7 @@ public class DownCasting_Practice {
         System.out.println("=====================");
 
         Phone phone2=new Samsung("ff", 1000, 5.4);
+
 
        // phone2.freezing(); // refreence type can not have this action
         //DownCasting to have this action
